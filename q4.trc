@@ -1,0 +1,10 @@
+%List the firstname and lastname of employee(s) who has the highest hours on works_on. -- [filenames: q4.trc]
+
+result := {E.fname, E.lname | employee(E) and
+	(exists W)(works_on(W) and 
+		E.ssn = W.essn and 
+		not(exists C)(works_on(C) and
+		W.hours < C.hours))}; 
+		
+		
+		

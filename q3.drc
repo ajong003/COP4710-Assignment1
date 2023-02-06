@@ -1,0 +1,9 @@
+%List the last names of managers of departments that employ at least one employee with 'SPOUSE' as a dependent. -- [filename: q3.drc]
+result := 
+{ FNAME, LNAME | (exists MGRSSN,DNUMBER) (employee(FNAME,_,LNAME,MGRSSN,_,_,_,_,_,_) and
+			department(_,DNUMBER,MGRSSN,_) and
+			(exists SSN)(employee(_,_,_,SSN,_,_,_,_,_,DNUMBER)and
+				dependent(SSN,_,_,_,'SPOUSE'))) };
+			
+		
+		

@@ -1,0 +1,26 @@
+COP 4710                 Asg - 1 Grading scheme		Spring 2023
+
+Relational queries (using winRDBI)
+
+Query	Points
+
+Relational algebra queries:
+q1.alg     25
+
+q2.alg     25
+
+Relational calculus queries:
+q3.drc     25
+
+q4.trc     25
+
+         -----
+Total     100
+
+
+Penalty:
+
+- Absence of originality declaration
+      Name, ID, declaration, etc ...... -10
+      Signature ....................... -10
+      Comments ........................ -10

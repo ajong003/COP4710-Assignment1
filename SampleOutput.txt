@@ -1,0 +1,55 @@
+To receive the correct score for your relational algebra/calculus queries, 
+  - the query must run in winRDBI
+  - the result of the query must be correct (as listed here)
+  - importantly, the semantics of the query must satisfy the specification
+  - the query must be readable with suitable comments
+  - the query should NOT use any data values that is not listed in the specification. 
+  
+Each temporary table names must begin with a lowercase alphabet
+Each domain/tuple variable must begin with an uppercase alphabet
+
+Database: Company
+=============================== q1.alg - 25 ==================================
+%
+% List the firstname and lastname of each employee who has at least one work assignment with the project "ProductY".
+%
+%    Result:
+%	fname		lname
+%       =====		=====
+%	'John'		'Smith'
+%	'Franklin'	'Wong'
+%	'Joyce'		'English'
+%
+=============================== q2.alg - 25 ==================================
+%
+% List the firstname and lastname of employee(s) with the lowest salary value.
+%
+%    Result: 
+%	fname		lname
+%	'Alicia'	'Zelaya'
+%	'Joyce'		'English'
+%	'Ahmad'		'Jabbar'
+%
+
+=============================== q3.drc - 25 ==================================
+%
+%  List the last names of managers of departments that employ
+%    at least one employee with 'SPOUSE' as a dependent.
+%
+%    Result:     
+%	MgrLName
+%	========
+%	'Wong'
+%	'Wallace'
+%
+=============================== q4.trc - 25 ==================================
+%
+% List the firstname and lastname of employee(s)
+%  who has the highest hours on works_on.
+%
+%    Result:     
+%	fname		lname
+%	=====		=====
+%	'Ramesh'	'Narayan'
+%
+==============================================================================

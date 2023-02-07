@@ -1,0 +1,7 @@
+%test := { | (forall S)(not(student(S))
+
+e := { E.fname | employee(E) and
+	not(exists D)(employee(D) and D.fname=E.fname
+	and D.fname<> 'John')};
+f := { E.fname | employee(E) and
+	not (forall D)(employee(D) and D.fname=E.fname)};
